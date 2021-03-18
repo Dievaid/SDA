@@ -90,7 +90,7 @@ childNode *playJosephGame(childNode *head, int p)
     while (list->next != list) { //cat timp lista nu a ramas cu un singur element lista
         for (int i = 1; i < p; i++) {
             list = list->next;
-        }//ne deplasam catre elementul pe care vrem sa il eliminam
+        }//ne deplasam catre elementul dinaintea celuia pe care vrem sa il eliminam
 
         if(!kick_head) {
             kick_head = makeChildNode(list->next->number, list->next->name, NULL);
