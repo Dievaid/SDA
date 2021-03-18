@@ -114,6 +114,5 @@ childNode *playJosephGame(childNode *head, int p)
     
     //eliminam din lista ultimul copil
     free(list);
-
     return kick_head;
 }

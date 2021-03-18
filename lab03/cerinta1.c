@@ -41,16 +41,13 @@ node *makeList(FILE *file)
     int data;
 
     node* linked_list = NULL;
-    node* aux;
 
     fscanf(file, "%d", &data);
     linked_list = makeNode(data, NULL); //memoram adresa de inceput a primului nod din lista
-    aux = linked_list;
 
     while(fscanf(file, "%d", &data) != EOF) {
-        if(aux->data < data) {
-            aux = makeNode(data, linked_list); //adaugam un nod inaintea capului listei
-            linked_list = aux; // actualizam capul listei
+        if(linked_list->data < data) {
+            linked_list = makeNode(data, linked_list); //adaugam un nod inaintea capului listei
         }
     }
     return linked_list;
