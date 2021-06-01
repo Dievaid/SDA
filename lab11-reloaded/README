@@ -1,0 +1,13 @@
+    Descriere metodă de rezolvare:
+        - se sortează descendent obiectele după raportul dintre preț și greutate;
+        - cât timp greutatea obiectelor adăugate nu depășește capacitatea ghiozdanului se vor adăuga pe rând prețurile obiectelor sortate într-o variabilă care inițial este 0 care reprezintă profitul maxim;
+            -> dacă se ajunge la un obiect care nu încape în ghiozdan: se calculează capacitatea rămasă a ghiozdanului se împarte la greutatea obiectului și se înmulțește cu prețul acestuia și se adaugă la variabila ce reprezintă profitul maxim;
+
+    Metoda de rezolvare este eficientă deoarece:
+        -> se folosește heapsort (metodă de sortare cu complexitate liniar logaritmică -> O(nlogn), am ales această metodă de rezolvare pentru că este cea mai eficientă metodă de sortare cu interschimbări) pentru a putea parcurge ulterior liniar pentru a calcula profitul maxim (complexitate O(n))
+        -> complexitate totală temporală (O(nlogn))
+
+
+    Prefer metoda de rezolvare cu teste unitare a laboratoarelor deoarece putem verifica mult mai ușor dacă ceva nu funcționează cum trebuie
+și deoarece ne putem dezvolta capacitatea de a ne adapta la codul scris de ceilalți care este necesară în majoritatea job-urilor din domeniul IT.
+    Metoda de rezolvare din acest laborator are ca avantaj libertatea, mai precis, scrierea de cod în modul în care noi, studenții, vedem problema mai ușor de rezolvat.  
